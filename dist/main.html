@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./main.css" />
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="weather-input">
+      <div class="feedback"></div>
+      <form id="city-form">
+        <input
+          id="city-input"
+          type="text"
+          minlength="1"
+          maxlength="50"
+          placeholder="City"
+        />
+        <button id="submit-btn" type="submit">Show Weather</button>
+      </form>
+    </div>
+    <div class="weather-container">
+      <div class="weather-title">
+        <h2 class="city-name"></h2>
+        <h3 class="weather-date"></h3>
+      </div>
+      <div class="weather-info weather-description">
+        <p class="description-text"></p>
+      </div>
+      <div class="weather-info weather-temp">
+        <h3>Temprature</h3>
+        <div class="unit temp">
+          <p class="temp-value"></p>
+          <p class="temp-unit">&#8451;</p>
+        </div>
+        <h3>What it feels like</h3>
+        <div class="unit feels-like">
+          <p class="feels-like-value"></p>
+          <p class="feels-like-unit">&#8451;</p>
+        </div>
+      </div>
+      <div class="weather-info weather-humidity">
+        <h3>Humidity</h3>
+        <div class="unit humidity">
+          <p class="humidity-value"></p>
+          <p class="humidity-unit">%</p>
+        </div>
+      </div>
+      <div class="weather-info weather-wind">
+        <h3>Wind</h3>
+        <div class="wind-speed">
+          <h4>Speed</h4>
+          <div class="unit speed">
+            <p class="speed-value"></p>
+            <p class="speed-unit">km/h</p>
+          </div>
+        </div>
+        <div class="wind-direction">
+          <h4>Direction</h4>
+          <div class="unit direction">
+            <p class="direction-value"></p>
+            <!-- use a arrow to show degree e.g. &#8593; -->
+            <p class="direction-unit">&#176;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

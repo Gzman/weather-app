@@ -1,0 +1,82 @@
+/* Simple Css reset */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  border: 1px solid black;
+}
+
+html {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 1rem;
+}
+
+#submit-btn,
+#city-input {
+  padding: 0.5rem;
+}
+
+.feedback {
+  display: none;
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: rgb(216, 121, 121);
+  color: rgb(107, 19, 19);
+  border: 0.1rem solid rgb(107, 19, 19);
+}
+
+.showItem {
+  display: block;
+}
+
+.weather-container {
+  padding: 1rem;
+  display: none;
+}
+
+.weather-title {
+  padding: 1rem;
+  font-size: 1.25rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.weather-description {
+  font-size: 1.25rem;
+}
+
+.showWeather {
+  display: flex;
+  flex-direction: column;
+}
+
+.unit {
+  padding: 0.5rem;
+  display: flex;
+}
+
+.weather-info {
+  padding: 1rem;
+}
+
+.temp,
+.feels-like {
+  font-size: 1.5rem;
+}
+
+.wind-speed,
+.wind-direction {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
